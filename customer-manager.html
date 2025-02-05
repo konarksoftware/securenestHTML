@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Securenest : Customer Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/dark-web-detective.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.slim.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-6">
+          <div class="logo-box">
+            <a href="index.html"><img src="assets/images/securenest-logo.png" alt="image"></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6">
+          <div class="notification-box">
+            <ul>
+              <li><a href=""><img src="assets/images/country-icon.png" alt="image"></a></li>
+              <li><a href=""><img src="assets/images/bell-icon.png" alt="image"></a></li>
+              <li><a href=""><img src="assets/images/help-icon.png" alt="image"></a></li>
+              <li><a href=""><img src="assets/images/support-icon.png" alt="image"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="customer-manager">
+    <div class="container">
+      <div class="customer-manager-inner">
+        <div class="customer-manager-inner-section">
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <div class="title-caption-box">
+            <h3>Customer Manager</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="customer-manager-box">
+        <div class="customer-manager-customer-type-box">
+             <div class="row">
+              <div class="col-sm-4 col-12">
+                <div class="active-customers-box">
+                  <h4>Active Customers</h4>
+                  <h5>50</h5>
+                </div>  
+              </div>
+              <div class="col-sm-4 col-12">
+                <div class="inactive-customers-box">
+                  <h4>Inactive Customers</h4>
+                  <h5>20</h5>
+                </div>  
+              </div>
+              <div class="col-sm-4 col-12">
+                <div class="new-customers-box">
+                  <h4>New Customers</h4>
+                  <h5>10</h5>
+                  <p>Customers on-boarded last 7 days</p>
+                </div>  
+              </div>
+             </div> 
+        </div>
+
+        <div class="customer-manager-customer-search-box">
+            <div class="row">
+              <div class="col-sm-12 col-12">
+                <div class="customer-manager-customer-search-section">
+
+                  <div class="customer-manager-search-inner-section">
+                    <a href="" class="search-customer-link"><img src="assets/images/search-technician-icon.png" alt="image"></a> <input type="text" name="" placeholder="Search by user name">
+                  </div>
+
+                  <div class="customer-manager-customer-sort-section">
+                    <select class="form-control" name="">
+                      <option value="">Sort By (Active / Inactive)</option>
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+            </div>  
+        </div>
+
+        <!-- <div class="customer-manager-customer-search-box">
+            <div class="row">
+              <div class="col-sm-9 col-12">
+                <div class="customer-manager-customer-search-section">
+                  <div class="customer-manager-search-inner-section">
+                    <a href="" class="search-customer-link"><img src="assets/images/search-technician-icon.png" alt="image"></a> <input type="text" name="" placeholder="Search by user name">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-12">
+                <div class="customer-manager-customer-sort-section">
+                  <select class="form-control" name="">
+                    <option value="">Sort By (Active / Inactive)</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                  </select>
+                </div>
+              </div>
+            </div>  
+        </div> -->
+
+        <div class="customer-manager-customer-list-box">
+          <div class="table-responsive table-responsive-height-set">
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th width="15%">Customer ID</th>
+                  <th width="24%">Name</th>
+                  <th width="15%">Member since</th>
+                  <th width="15%">Device Registered</th>
+                  <th width="13%">Status</th>
+                  <th width="13%">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="customer-manager-customer-list-success-row">
+                  <td width="15%">C0001</td>
+                  <td width="24%">John Doe</td>
+                  <td width="15%">August 2024</td>
+                  <td width="15%">20</td>
+                  <td width="13%"><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td width="13%"><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr>
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-pending-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+
+                <tr>
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-pending-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr>
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-pending-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+
+                <tr>
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-pending-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr>
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-pending-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+                <tr class="customer-manager-customer-list-success-row">
+                  <td>C0001</td>
+                  <td>John Doe</td>
+                  <td>August 2024</td>
+                  <td>20</td>
+                  <td><img src="assets/images/status-success-icon.png" alt="image"></td>
+                  <td><img src="assets/images/action-three-dots-icon.png" alt="image"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="customer-manager-customer-list-pagination-box">
+            <ul>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+
+      <!-- <div class="footer-nav">
+      <div class="row">
+        <div class="col-sm-6 col-6">
+          <div class="footer-nav-lt">
+            <a href="">Cancel</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6">
+          <div class="footer-nav-rt">
+            <a href="">Next</a>
+          </div>
+        </div>
+      </div>
+  </div> -->
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Copyright 2024 Securenest. Allrights reserved.</p>
+  </footer>
+</body>
+</html>
